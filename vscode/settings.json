@@ -1,0 +1,133 @@
+{
+  "editor.formatOnSave": true,
+  "editor.suggest.insertMode": "replace",
+  "editor.linkedEditing": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "window.zoomLevel": 0.5,
+  "launch": {},
+  "[json]": {},
+  "editor.lineNumbers": "relative",
+  "debugpy.debugJustMyCode": false,
+  "html.format.enable": true,
+  "vim.leader": "<Space>",
+  "vim.hlsearch": true,
+  "vim.normalModeKeyBindingsNonRecursive": [
+    // NAVIGATION
+    // switch b/w buffers
+    { "before": ["<S-h>"], "commands": [":bprevious"] },
+    { "before": ["<S-l>"], "commands": [":bnext"] },
+
+    // splits
+    { "before": ["leader", "v"], "commands": [":vsplit"] },
+    { "before": ["leader", "s"], "commands": [":split"] },
+
+    // panes
+    {
+      "before": ["leader", "h"],
+      "commands": ["workbench.action.focusLeftGroup"]
+    },
+    {
+      "before": ["leader", "j"],
+      "commands": ["workbench.action.focusBelowGroup"]
+    },
+    {
+      "before": ["leader", "k"],
+      "commands": ["workbench.action.focusAboveGroup"]
+    },
+    {
+      "before": ["leader", "l"],
+      "commands": ["workbench.action.focusRightGroup"]
+    },
+    // NICE TO HAVE
+    { "before": ["leader", "p"], "commands": ["editor.action.formatDocument"] },
+    { "before": ["leader", "w"], "commands": [":w"] }
+  ],
+  "vim.visualModeKeyBindings": [
+    // Stay in visual mode while indenting
+    { "before": ["<"], "commands": ["editor.action.outdentLines"] },
+    { "before": [">"], "commands": ["editor.action.indentLines"] },
+    // Move selected lines while staying in visual mode
+    { "before": ["J"], "commands": ["editor.action.moveLinesDownAction"] },
+    { "before": ["K"], "commands": ["editor.action.moveLinesUpAction"] },
+    // toggle comment selection
+    { "before": ["leader", "c"], "commands": ["editor.action.commentLine"] }
+  ],
+  // GO
+  "go.toolsManagement.autoUpdate": true,
+  "go.delveConfig": {
+    "dlvPath": " /Users/c13493q/go/bin/dlv"
+  },
+  "gopls": { "ui.semanticTokens": true },
+  // TS
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.formatOnPaste": false,
+    "editor.formatOnSave": false,
+    "editor.formatOnType": false,
+    "editor.formatOnSaveMode": "file",
+    "breadcrumbs.showFunctions": true,
+    "files.trimTrailingWhitespace": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "never",
+      "source.fixAll": "explicit"
+    },
+    "editor.rulers": [80, 120],
+    "files.insertFinalNewline": true
+  },
+  "python.languageServer": "Default",
+  "python.analysis.typeCheckingMode": "standard",
+  "python.analysis.diagnosticSeverityOverrides": {
+    "reportUnusedImport": "none", // Suppress unused import warnings
+    "reportUnusedVariable": "warning", // Show unused variable warnings
+    "reportMissingImports": "error", // Treat missing imports as errors
+    "reportGeneralTypeIssues": "warning", // Treat general type issues as errors
+    "reportOptionalSubscript": "warning", // Show warnings for optional subscripting
+    "reportIncompatibleMethodOverride": "warning", // Treat incompatible method overrides as errors
+    "reportIncompatibleVariableType": "warning", // Treat incompatible variable types as errors
+    "reportMissingTypeArgument": "warning", // Show warnings for missing type arguments
+    "reportRedundantCast": "none", // Suppress warnings for redundant casts
+    "reportUnnecessaryTypeIgnore": "warning", // Show warnings for unnecessary type ignores
+    "reportUnknownParameterType": "warning",
+    "reportOptionalIterable": "warning",
+    "reportArgumentType": "warning"
+  },
+  "python.testing.pytestEnabled": true,
+  "python.testing.pytestPath": "/Users/c13493q/.pyenv/shims/pytest",
+  "python.testing.cwd": "${workspaceFolder}",
+  "ruff.nativeServer": "on",
+  "ruff.lint.enable": true,
+  "ruff.organizeImports": true,
+  "git.autofetch": true,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.minimap.enabled": false,
+  "breadcrumbs.enabled": false,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "extensions.ignoreRecommendations": true,
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
+  },
+  "github.copilot.advanced": {
+    "authProvider": "github-enterprise"
+  },
+  "amazonQ.suppressPrompts": {
+    "codeWhispererConnectionExpired": true
+  },
+  "git.replaceTagsWhenPull": true,
+  "git.ignoreRebaseWarning": true,
+  "workbench.colorTheme": "Catppuccin Mocha"
+}
